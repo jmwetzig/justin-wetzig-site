@@ -5,11 +5,79 @@
         <title> Invader (artist)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content="Invader is an anonymous French street artist. He is known for his ceramic tile mosaics modeled on the pixelated art of 1970s&ndash;1980s 8-bit video games, many of which depict the titular aliens from the arcade games Space Invaders."/>
+		
+		<style>
+        /* box-sizing */
+		html {
+			box-sizing:border-box;
+		}
+		*, *:before, *:after {
+			box-sizing:inherit;
+		}
+		
+		/* STRUCTURE */
+		body {background-color:#555;}
+		#wrap {background-color:#ddd; width:100%; max-width:800px; margin:0 auto 0 auto;}
+		header {background-color:#444; color:white;}
+		footer {background-color:#444; color:white;}
+		header, section, footer {padding:20px 60px;}
+		figure {margin:0;}
+		ul {padding-left;}
+		
+		
+		/* FLOATS */
+		.fr300 {width:100%; max-width:300px; float:right; margin-left:20px; margin-bottom:20px;}
+		
+		.fr200 {width:100%; max-width:200px; float:right; margin-left:20px; margin-bottom:20px;}
+		
+		.fl200 {width:100%; max-width:200px; float:left; margin-right:20px; margin-bottom:20px;}
+			
+        .fl300 {width:100%; max-width:300px; float:left; margin-right:20px; margin-bottom:20px;}
+		
+		.clearfix:after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		
+		/* IMAGES */
+		img {width:100%; margin-bottom:12px;}
+		
+		/* TYPOGRAPHY */
+		body {font-family:arial, helvetica, sans-serif;}
+		h1 {font-size:36px;}
+		figcaption {font-style:italic; font-size:14px}
+		ul {padding-left:16px;}
+		li {margin-bottom:8px;}
+		header p {line-height:1.4}
+		figcaption {line-height:1.4}
+		
+		/* NAV TYPE */
+		ul {padding-left:0; }
+		nav li  {list-style:none; display:inline-block; margin-right:6px;}
+		
+		/* LINKS */
+		a:link {color:#aaa; text-decoration:none;}
+		a:visited {color:#aaa;}
+		a:hover {color:aqua;}
+		a:focus {color:aqua;}
+		a:active {color:aqua;}
+		
+		section a:link {color:#666;}
+		section a:visited {color:#666;}
+		section a:hover {color:red;}
+		section a:focus {color:red;}
+		section a:active {color:red;}
+		
+		nav a:link, nav a:visited {color:#white; background-color:red; padding:6px;}
+		nav a:hover, nav a:focus, nav a:active {color:white; background-color:#777;}
+		
+    </style>
     </head>
 
     <body id="top"> 
         <div id="wrap">
-            <header>
+            <header class="clearfix">
                 <nav role="navigation" aria-label="main menu">
                     <ul>
                         <li><a href="#bio">Bio</a></li>
@@ -21,8 +89,8 @@
                     </ul>
                 </nav>
 
-                <figure>
-                    <img src="images/Space_Invader_Photographed_in_Montreuil.jpeg" style="width: 300px;">
+                <figure class="fr200">
+                    <img src="images/Space_Invader_Photographed_in_Montreuil.jpeg" style="width: 200px;" alt="Image of street artist Invader, his face is pixelated as he is anonymous">
                     <figcaption>Space Invader, Artist, photographed in Montreuil.</figcaption>
                     <small>(From <a href="https://www.telegraph.co.uk/news/2017/08/04/famous-space-invader-mosaics-disappear-paris-streets/" target="_blank">https://www.telegraph.co.uk/news/2017/08/04/famous-space-invader-mosaics-disappear-paris-streets/</a>)</small>
                 </figure>
@@ -37,18 +105,27 @@
             <section id="bio">
                 <h2>Bio</h2>
                 <p><a href="#top">Top</a></p><!-- link sends you back to the top -->
+				 <figure class="fr300">
+                    <img src="images/Pacman_Guggenheim_(cropped).jpg" style="width: 300px;" alt="Mosaic of Pac Man Ghosts">
+                    <figcaption>Invader&rsquo;s Pac&ndash;Man mosaics (BBO 24&ndash;27), in Bilbao, near the Guggenheim Museum.</figcaption>
+                    <small>(From <a href="https://commons.wikimedia.org/wiki/File:Pacman_Guggenheim_(cropped).jpg#/media/File:Pacman_Guggenheim_(cropped).jpg" target="_blank">https://commons.wikimedia.org/wiki/File:Pacman_Guggenheim_(cropped).jpg</a>)</small>
+                </figure>
+				
                 <p>Invader is an anonymous French street artist. He is known for his ceramic tile mosaics modeled on the pixelated art of <time datetime="1970">1970s</time>&ndash;<time datetime="1980">1980s</time> 8&ndash;bit video games, many of which depict the titular aliens from the arcade games <i>Space Invaders, Pac&ndash;Man and Super Mario Bros.</i> (the inspirations for his pseudonym). As of December 2020, his creations can be seen in highly&ndash;visible locations in 79 cities in 20 countries. To accompany his citywide installations, or &ldquo;Invasions&rdquo;, Invader publishes books and maps as guides to the locations of his mosaics. Invader also makes mosaics using QR codes and stacks of Rubik&rsquo;s Cubes (with the latter typically installed indoors). </p>
 
-                <figure>
-                    <img src="images/Pacman_Guggenheim_(cropped).jpg" style="width: 300px;">
-                    <figcaption>Invader&rsquo;s Pac&ndash;Man mosaics (BBO 24&ndash;27), in Bilbao, near the Guggenheim Museum.</figcaption>
-                    <small>(From <a href="https://commons.wikimedia.org/wiki/File:Pacman_Guggenheim_(cropped).jpg#/media/File:Pacman_Guggenheim_(cropped).jpg" target="_blank">https://commons.wikimedia.org/wiki/File:Pacman_Guggenheim_(cropped).jpg#/media/File:Pacman_Guggenheim_(cropped).jpg</a>)</small>
-                </figure>
             </section> <!-- closes bio-->
 
-            <section id="history">
+          <section id="history">
                 <h2>History</h2>
                 <p><a href="#top">Top</a></p><!-- link sends you back to the top -->
+			  
+			   <figure class="fl300">
+                    <img src="images/Manchester_Space_Invader.jpg" style="width: 300px;" alt="A picture of a mosiac styled after the space invader video game.">
+                    <figcaption>One of Invader&rsquo;s aliens (MAN 47) on a wall in Manchester, England, installed in <time datetime="2004">Jaunary 2004</time></figcaption>
+                    <small>(From <a href="https://commons.wikimedia.org/wiki/File:Manchester_Space_Invader.jpg#/media/File:Manchester_Space_Invader.jpg" target="_blank">https://commons.wikimedia.org/
+						wiki/File:Manchester_Space_Invader.jpg</a>)</small>
+                </figure>
+			  
                 <p>A graduate of a Parisian École des Beaux&ndash;Arts, Invader initially derived inspiration for his creations from the video games he played when he was growing up in the <time datetime="1970">1970s</time> and <time datetime="1980">80s</time>. Using tiles to represent the pixels in the games&rsquo; 8&ndash;bit graphics, Invader began making mosaics in Paris in the <time datetime="1990">1990s</time>, and went on to install mosaics in 31 other cities in France.</p>
                 
                 <p>Invader has since staged &ldquo;invasions&rdquo; in cities and countries worldwide, including seven in New York City and three in Hong Kong. He often installs mosaics in culturally and/or historically important locations, with one high&ndash;profile example being his <time datetime="1999-12-31">December 31st, 1999</time> mosaic on the letter D of the Hollywood Sign marking the Y2K bug. During subsequent trips to Los Angeles, he also placed mosaics on the eight other letters of the sign.</p>
@@ -61,11 +138,6 @@
                 
                 <p>Invader installations have become desirable collectors&rsquo; pieces, to the point where some works have been stolen off of the walls upon which they were installed.</p>
                 
-                <figure>
-                    <img src="images/Manchester_Space_Invader.jpg" style="width: 300px;">
-                    <figcaption>One of Invader&rsquo;s aliens (MAN 47) on a wall in Manchester, England, installed in <time datetime="2004">Jaunary 2004</time></figcaption>
-                    <small>(From <a href="https://commons.wikimedia.org/wiki/File:Manchester_Space_Invader.jpg#/media/File:Manchester_Space_Invader.jpg" target="_blank">https://commons.wikimedia.org/wiki/File:Manchester_Space_Invader.jpg#/media/File:Manchester_Space_Invader.jpg</a>)</small>
-                </figure>
             </section> <!-- closes history-->
 
             <section id="identity">
@@ -80,14 +152,15 @@
                 <p>Invader sees himself as a &ldquo;hacker&rdquo; of public space spreading a mosaic &ldquo;virus&rdquo;. He believes that museums and galleries are not accessible to everyone, and so installs his work at street level for ordinary people to enjoy on a daily basis.</p>
 
                 <p>The sites for his mosaics are often chosen for their visibility, local interest and symbolism. No two pieces are alike.</p>
+				
+				<figure class="fr300">
+                    <img src="images/Cannon_street_mosaic.jpg" style="width: 300px;" alt="a mosaic of Thomas from Kung Fu Master">
+                    <figcaption>Thomas from Kung&ndash;Fu Master (HK 56) on Cannon Street, Hong Kong (<time datetime="2014">2014</time>)</figcaption>
+                    <small>(From <a href="https://commons.wikimedia.org/wiki/File:Cannon_street_mosaic.jpg#/media/File:Cannon_street_mosaic.jpg" target="_blank">https://commons.wikimedia.org/wiki/
+						File:Cannon_street_mosaic.jpg</a>)</small>
+                </figure>
                     
                 <p>Although many of his works feature his signature aliens, Invader&rsquo;s repertoire of subjects also includes <i>Star Wars</i> characters, the Pink Panther, Mega Man, Spider&ndash;Man, Hong Kong Phooey, Thomas from <i>Kung&ndash;Fu Master</i> and Popeye. The subject matter may also be themed and adapted to a particular location; sites near major bank buildings might be marked with dollar sign mosaics, while those in Hong Kong often have an oriental theme. </p>
-
-                <figure>
-                    <img src="images/Cannon_street_mosaic.jpg" style="width: 300px;">
-                    <figcaption>Thomas from Kung&ndash;Fu Master (HK 56) on Cannon Street, Hong Kong (<time datetime="2014">2014</time>)</figcaption>
-                    <small>(From <a href="https://commons.wikimedia.org/wiki/File:Cannon_street_mosaic.jpg#/media/File:Cannon_street_mosaic.jpg" target="_blank">https://commons.wikimedia.org/wiki/File:Cannon_street_mosaic.jpg#/media/File:Cannon_street_mosaic.jpg</a>)</small>
-                </figure>
                 
                 <p>Each &ldquo;invasion&rdquo; usually takes around two or three weeks, with the actual installations taking at least a week. The mosaics are mapped, catalogued and photographed to indicate their locations within a city; using this data, the artist then prints and distributes city &ldquo;invasion maps&rdquo;. Smartphone users can also hunt for mosaics globally using the &ldquo;FlashInvaders&rdquo; app. In Montpellier, locations were chosen so that, when plotted on a map, they form an image of a giant <i>Space Invaders</i> alien.</p>
                     
@@ -105,14 +178,14 @@
                     
                     <blockquote>&ldquo;Invader&rsquo;s pop art may seem shallow, but by taking the risk of illegally re&ndash;contextualizing video game characters in an urban environment that provides more chaotic social interaction than a gamer&rsquo;s bedroom, he makes a statement about the desensitizing nature of video games and consumer culture. In a postmodern paradox, a game like Grand Theft Auto takes the danger of the streets and puts it in a safe video game, while Invader takes a safe video game icon and inserts it into the danger of the streets.&rdquo;</blockquote>
                     </p>
-                
-                <p>During an early <time datetime="2014">2014</time> &ldquo;invasion&rdquo; in Hong Kong comprising a total of 48 works, the city&rsquo;s Highways Department removed the life&ndash;sized <i>Hong Kong Phooey</i> (HK 58) mosaic, which had been placed by the side of a road in Fortress Hill. This angered local residents, who saw the removal as an example of the government only paying lip&ndash;service to promoting the arts in the city. In early <time datetime="2015">2015</time>, a replica of the mosaic reached HK$1.96 million ($250,000) at auction at Sotheby&rsquo;s. NY145, featuring an invader and an old Apple Computer icon, sold for HK$562,500 ($72,000).</p>
-
-                <figure>
-                    <img src="images/HKFooey_Sothebys.jpg" style="width: 300px;">
+                <figure class="fr300">
+                    <img src="images/HKFooey_Sothebys.jpg" style="width: 300px;" alt="a mosaic of character Hong Kong Phooey">
                     <figcaption>Hong Kong Phooey (HK 58), sold for US$250,000 in early <time datetime="2015">2015</time></figcaption>
-                    <small>(From <a href="https://commons.wikimedia.org/wiki/File:HKFooey@Sothebys.jpg#/media/File:HKFooey@Sothebys.jpg" target="_blank">https://commons.wikimedia.org/wiki/File:HKFooey@Sothebys.jpg#/media/File:HKFooey@Sothebys.jpg</a>)</small>
+                    <small>(From <a href="https://commons.wikimedia.org/wiki/File:HKFooey@Sothebys.jpg#/media/File:HKFooey@Sothebys.jpg" target="_blank">https://commons.wikimedia.org/wiki/
+						File:HKFooey@Sothebys.jpg</a>)</small>
                 </figure>
+			
+                <p>During an early <time datetime="2014">2014</time> &ldquo;invasion&rdquo; in Hong Kong comprising a total of 48 works, the city&rsquo;s Highways Department removed the life&ndash;sized <i>Hong Kong Phooey</i> (HK 58) mosaic, which had been placed by the side of a road in Fortress Hill. This angered local residents, who saw the removal as an example of the government only paying lip&ndash;service to promoting the arts in the city. In early <time datetime="2015">2015</time>, a replica of the mosaic reached HK$1.96 million ($250,000) at auction at Sotheby&rsquo;s. NY145, featuring an invader and an old Apple Computer icon, sold for HK$562,500 ($72,000).</p>
                     
                 <p>A solo exhibition of new and retrospective works &ndash; called <i>Wipe Out</i> &ndash; was held in Hong Kong in May <time datetime="2015">2015</time> in association with the Hong Kong Contemporary Art Foundation and Le French May.</p>
                     
